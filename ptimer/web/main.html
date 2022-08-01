@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pezed Trainer</title>
+  <script src="eel.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="picture-cont">
+    <input type="text" class="exercise-name text"></span>
+    <div class="img-frame hidden">
+    </div>
+    <div class="exercise-btns hidden">
+      <!-- <span class="choose-exercise btn ex-btn text">Load Saved Exercise </span> -->
+      <span class="update-bpm-exercise btn ex-btn text">Update Bpm For Exercise </span>
+      <span class="update-name-exercise btn ex-btn text">Change Exercise Name </span>
+    </div>
+    <select name="exercises" id="exercise" class="dropdown">
+    </select>
+  </div>
+  <div class="container">
+    <div class="metronome">
+      <div class="bpm-display">
+        <span class="tempo"></span>
+        <span class="bpm"></span>
+      </div>
+      <div class="tempo-text text"></div>
+      <div class="tempo-settings">
+        <div class="adjust-tempo-btn decrease">-</div>
+        <input type="range" min="40" max="230" step="1" class="slider">
+        <div class="adjust-tempo-btn increase">+</div>
+      </div>
+      <div class="start-stop">START</div>
+      <div class="timer">
+        <input type="number" min="0" max="120" class="minutes" placeholder="mm" value=15>:
+        <input type="number" min="0" max="59" class="seconds" placeholder="ss" value=00>
+        <input type="submit" name="set-clock" class="set" value="Set">
+      </div>
+      <div class="start btn cd text">Start Countdown</div>
+      <div class="reset btn cd text">Reset Countdown</div>
+      <div class="add-remove">
+        <div class="add btn cd text">ADD exercise</div>
+        <div class="remove btn cd text">remove exercise</div>
+      </div>
+    </div>
+  <script src="./metronome.js"></script>
+  <script src="./app.js" ></script>
+</body>
+</html>

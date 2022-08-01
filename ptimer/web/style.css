@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+@font-face {
+  font-family: pepega;
+  src: url("fonts/digital-dream.fat-narrow.ttf")
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #525252;
+  user-select: none;
+}
+
+.text {
+  font-size: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0%;
+  display: none;
+}
+
+.exercise-name {
+  text-transform: none;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.picture-cont {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 35vh;
+  max-height: 55vh;
+  margin: auto;
+}
+
+.img-frame {
+  display: flex;
+  max-width: 100%;
+  max-height: 600px;
+  /* border: 1px solid black; */
+  overflow-x: scroll;
+  overflow-y: scroll;
+  /* white-space: nowrap; */
+  /* background-color: #f0f0f0; */
+}
+
+img {
+  margin: auto;
+  height: auto;
+}
+
+.exercise-btns {
+  margin-top: 15px;
+}
+
+.dropdown{
+  margin-top: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metronome {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.bpm-display {
+  width: 100%;
+  text-align: center;
+  color: #fa545c;
+  font-weight: bold;
+}
+.bpm-display .tempo {
+  font-size: 4rem;
+}
+
+.timer {
+  font-family: pepega,'Syne Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #8d8d8d;
+  margin: 5px auto;
+  padding: 10px;
+  font-size: 2rem;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+.start{
+  font-size: 1rem;
+}
+.add {
+  font-size: 0.7rem;
+}
+.btn {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 5px;
+  margin: 2px auto;
+  padding: 5px;
+}
+.ex-btn {
+  margin: 30px 5px;
+}
+
+.btn:hover {
+  background-color: #d4d4d4;
+}
+
+.tempo-settings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-remove {
+  font-size: 0.7rem;
+  margin: 1px auto;
+}
+.remove {
+  font-size: 0.7rem;
+  /* background-color: #fa545c; */
+  border: 1px solid red
+}
+.remove:hover {
+  color: white;
+  background-color: red;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=text] {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  -moz-appearance: textfield;
+}
+input[type=number] {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-family: pepega,'Syne Mono', monospace;
+  font-size: 2rem;
+  -moz-appearance: textfield;
+}
+input[type=submit] {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background-color: black;
+  font-family: pepega,'Syne Mono', monospace;
+  font-size: 2rem;
+  color: #8d8d8d;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 3px;
+}
+.set:hover {
+  background-color: #b8b8b8;
+  color: black;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 70%;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type=range]:focus{
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fa545c;
+  cursor: pointer;
+  margin-top: -8px;
+}
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fa545c;
+  cursor: pointer;
+  border: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+
+.tempo-settings .adjust-tempo-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(156, 156, 156);
+  text-align: center;
+  cursor: pointer;
+}
+.tempo-settings .adjust-tempo-btn:hover {
+  background: #fa545c;
+  color: #fff;
+}
+.tempo-settings .decrease{
+  line-height: 21px;
+}
+.tempo-settings .increase{
+  line-height: 27px;
+}
+
+.start-stop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 0.8em;
+  text-align: center;
+  border-radius: 50%;
+  background: #fa545c;
+  color: white;
+  line-height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.start-stop:hover {
+  background: #ff656c;
+}
+
+.beats-per-text {
+  text-align: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
